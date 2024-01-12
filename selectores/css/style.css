@@ -1,0 +1,58 @@
+
+/*esto es un comentarios*/
+
+/*selector de tipo, . para seleccionar por clase*/
+
+body{
+    font-family: Arial;
+}
+
+h2{
+    color: seagreen;
+    font-style: italic;
+}
+
+/* li{
+    font-size: 20px;
+    list-style: square;
+} */
+
+/* selector de clase (ctrl k + u, para comentar lineas)*/ 
+/* .subtitle es una clase de h2 */
+
+.subtitle{
+    color: black;
+    background-color: teal;
+    text-align: center;
+}
+
+/* solo para h1, # para seleccionar por ID*/
+#title{
+    color: black;
+    background-color: gray;
+    padding: 20px 10px;
+    font-family: cursive;
+}
+
+/* selectores combinadores */
+
+/* combinador de descendientes, para etiquetas contenidad dentro de otras etiquetas */
+
+/* dentro de section hay tres h2 que toman los atributos. */
+.section h2{
+    background-color: red;
+}
+
+/* solo modifica las li dentro de ul, listas desordenadas */
+ul li{
+    font-size: 20px;
+    list-style: square;
+}
+
+/* combinador de hijos directos */
+/* solo las ul como hijo directo de section aplica los cambios. */
+ .section > ul{
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+ }

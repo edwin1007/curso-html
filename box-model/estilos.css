@@ -1,0 +1,6 @@
+/* los componentes o etiquetas son como cajas a la que se les puede aplicar atributos, como el tamnaño, el color, forma etc. */
+
+h1{
+    background-color: seagreen;
+    color: white;
+}

@@ -1,0 +1,66 @@
+
+/* la cascada */
+
+/* seleccionar la clase, es prioridad para tomar los atributos. si solo se duplica los h1 con diferentes valores en los atributos, solo toma los ultmios valores. */
+
+/* especificidad 1: 
+
+- selector de tipo.
+- pseudoelementos.
+
+especificidad 10.
+- selector de clase
+- selector de atributo.
+- pseudoclases.
+
+especificidad 100:
+- selector de id.
+
+(rompes las especificidad con !important) */
+/* no es buena practica usar !important */
+
+/* recomendable usar selector de clase por mantenibilidad del codigo */
+
+/* selector de clase */
+
+/*** .title{
+    color: green;
+    font-family: arial;
+}
+
+/* selector de id /
+#title{
+    color: blue;
+}
+
+/* selector de tipo /
+h1{
+    color: gray;
+    font-family: cursive !important;
+} ***/
+
+/* contenido de toda la pagina */
+/* casi todas las etiquetas heredan la misma fuente */
+body{
+    font-family: monospace;
+}
+
+/* aqui se pierde la herencia */
+h2{
+    font-family: Arial;
+}
+
+/* ********** nota: hay atributos que no se heredan ********* */
+.container{
+    color: blue;
+    font-family: arial;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+/* el parrafo hereda de la clase container */
+p{
+    color: black;
+    border: inherit; /* para heredar forzadamente */
+    padding: inherit;
+}
