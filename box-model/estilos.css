@@ -1,6 +1,107 @@
 /* los componentes o etiquetas son como cajas a la que se les puede aplicar atributos, como el tamnaño, el color, forma etc. */
 
+
+/* ********************************************************* */
+/* selector universal para evitar cambiar el margin uno por uno */
+*{
+    /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
+}
+
+/* ********************************************************* */
+/* para manipular el margen */
 h1{
     background-color: seagreen;
     color: white;
+
+    width: 300px;
+    padding: 20px;
+    /* margin: 0; */
+
+    /* margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;  */
+
+    /* margin: 50px 50px 80px 10px; */
 }
+
+p{
+    width: 300px;
+    background-color: firebrick;
+    color: #fff;
+    font-weight: bold;
+    /* padding: 20px;
+    margin: 0; */
+}
+
+/* ********************************************************* */
+/* para manipular el border */
+/* h1{
+    background-color: seagreen;
+    color: white;
+
+    /* border-width: 10px;
+    border-color: black;
+    border-style: dashed; *
+
+    border: 10px black dashed;
+
+    padding: 20px;
+} */
+
+/* otros bordes */
+/* 
+dotted: borde de puntos 
+dashed: linea de guiones
+solid: lines solida
+double: dos lineas como borde
+groove: borde ranurado en 3d
+ridge: borde estirado en 3d.
+*/
+
+
+/* ********************************************************* */
+/* para manipular la capa de relleno (padding) */
+/* h1{
+    background-color: green;
+    color: black;
+
+    width: 300px;
+    height: 200px;
+
+    /* padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 80px; */
+    
+    /* padding: top right bottom left; */
+
+    /* padding: 20px 40px 80px 40px; */
+    /* si hay menos de 4 valores, lo complementa con su contrarios. *
+} */
+
+/* ********************************************************* */
+/* para manipular la capa de contenido */
+/* h1{
+    background-color: seagreen;
+    color: black;
+
+    /* maximo contenido del texto *
+    width: max-content;
+
+    max-width: 200px;
+
+    min-width: 100px;
+
+    height: auto;
+    /* mas jerarquia que el anterior *
+    min-height: 200px; 
+
+    /* determina maxima altura, sin importar cantidad de texto *
+    max-height: 500px;
+
+    /* oculta el contenido desbordado *
+    overflow: hidden;
+} */
