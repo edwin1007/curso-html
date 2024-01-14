@@ -7,6 +7,7 @@
     /* border: 1px solid; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* ********************************************************* */
@@ -15,9 +16,27 @@ h1{
     background-color: seagreen;
     color: white;
 
-    width: 300px;
-    padding: 20px;
+    width: 200px;
+    height: 200px;
+    padding: 20px; /*si se congira con padding, aumenta ancho y alto */
+    border: 10px solid black;
+
+    /* la siguiente line es recomendable usar en los componentes, se pone al inicio para todo el document. */
+    /* box-sizing: content-box; */
+
+    /* box-sizing: content-box; */
     /* margin: 0; */
+
+    /* margenes automaticos */
+    /* margin-left:  auto; se desplaza hacia la derecha */
+
+    /* usando auto en ambos lados, se centra el componente */
+    /* margin-left: auto;
+    margin-right: auto; */
+
+    /* para resumir las 2 lineas anteriores */
+    /* margin: 30px auto;
+    border: 10px solid black; */
 
     /* margin-top: 50px;
     margin-right: 50px;
@@ -27,7 +46,20 @@ h1{
     /* margin: 50px 50px 80px 10px; */
 }
 
+/* no funciona el margin porque es un elemento en linea, no en bloque. */
+.cta{
+    background-color: tomato;
+    color: #fff;
+    padding: 20px;
+
+    /* se agrega display block, para convertirlo en bloque */
+    display: block;
+    width: 200px;
+    margin: 30 auto;
+}
+
 p{
+    margin-right: auto; /* se desplaza hacia la izquierda */
     width: 300px;
     background-color: firebrick;
     color: #fff;

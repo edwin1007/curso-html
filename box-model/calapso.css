@@ -1,0 +1,30 @@
+
+/* colapso de margenes top y bottom, al poner valores en las dos etiquetas, predomina el valor mayor. */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: arial;
+}
+
+.main {
+    background-color: steelblue;
+    color: white;
+    /* margin-bottom: 10px; */
+    /* margin-bottom: 10px; */
+    /* padding: 1px; */
+    border: 1px solid transparent;
+}
+
+.main-title{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.footer {
+    /* margin-top: 50px; */
+    background-color: slateblue;
+    color: white;
+}
