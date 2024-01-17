@@ -1,0 +1,28 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: Arial;
+}
+
+.main{
+    font-size: 10px;
+    /* 1em = 10px */
+}
+
+.main__title{
+
+}
+
+.img{
+    width: 10cm;
+    /* unidades de medida: cm, mm, pt, px */
+    /* html: font-size 1em = 16px, por defecto */
+}

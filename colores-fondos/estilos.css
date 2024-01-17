@@ -1,0 +1,103 @@
+
+/* color, background-color */
+/* formas de establecer un color */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* google fonts, en internet se encuentran fuentes que se pueden visualizar en cualquier dispositivo, se pueden enlazar desde internet, copiando y pegando el codigo en parte de metadatos, tambien se deben agregar aqui... */
+    
+    /* toma la forma de letra inicial, a menos que no se encuentre en el sistema, toma la siguiente opcion... */
+}
+
+div{
+    margin: auto; 
+    width: 100px;
+    height: 100px;
+    /* background-color: orange; */
+    background-image: url('https://images.unsplash.com/photo-1599425857670-b17a03c9c897?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+}
+
+.main_cta{
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    text-decoration: none; /*quita el subrayado*/
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.main__paragraph--second{
+    font-weight: 400;
+    font-style: italic;
+}
+
+.main{
+    /* height: 400px; */
+    background-image: linear-gradient(#2b2a2a8b, #0000ff71), url('./img.png');
+    background-size: cover;
+    padding: 20px 80px;
+    color: #ffff;
+}
+
+.main__title{
+    /* background-color: #000; */
+    /* letter-spacing: 2px; */
+    /* word-spacing: normal; */
+    /* overflow-wrap: break-word; */
+    /* la linea anterior evita que se desborden las palabras del contenedor 
+    */
+    
+    /* text-transform: lowercase / uppercase; */
+    /* text-transform: capitalize; */
+
+    text-align: center;
+    font-size: 40px; /*tamaño de texto*/
+    font-weight: bold;
+}
+
+.main__paragraph{
+    text-align: left;
+
+    line-height: 40px; /* espacio entre renglones de texto */
+    font-size: 20px;
+    /* 20px * 1.2 = 24px */
+    margin: 20px 0;
+}
+
+/* ******************************************************************* */
+/* Prueba con clase solo title */
+.title{
+    /* color: rgb(0, 58, 139); */
+
+    /* color: rgb(44, 27, 228, 0.893); */
+    /* 0-1: tranparencia de color */
+    
+    /* color: #145e4daa;  */
+    /* rojo verde azul transparencia*/
+
+    /* pagina para genera colores: colors.co */
+
+    /* border: 5px solid rgb(15, 19, 17); */
+    background-color: royalblue;
+    color: white;
+    padding: 10px;
+    height: 500px;
+
+    /* degrade de color */
+    background-image: linear-gradient(#ff00008b, #0000ff71), url('./img.png');
+    background-size: cover;
+
+    /* background-image: url('./img.png');
+    background-repeat: no-repeat;
+    background-size: contain; */
+    /* cover: ajusta la img al contnedor */
+    background-position: center;
+    /* center: centra la img en ancho y alto. */
+}
