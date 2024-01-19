@@ -10,15 +10,31 @@ html{
 
 body{
     font-family: Arial;
+    height: 100vh;
 }
 
 .main{
-    font-size: 10px;
+    /* font-size: 10px; */
     /* 1em = 10px */
+    /* vw: view port (0-100), vh: 100vh */
+
+    /* width: 100vw; width: 100%; */
+    width: 500px; /* tamaño del padre body */
+    /* background-color: gray; */
+    /* height: 50vh; */
+    height: 50%;
+    background-color: gray;
+}
+
+h1{
+    width: 50%; /* del tamaño del padre (main en este caso) */
+    /* background-color: red; */
 }
 
 .main__title{
-
+    font-size: 30px;
+    /* em, rem */
+    /* 1rem = 16px */
 }
 
 .img{
