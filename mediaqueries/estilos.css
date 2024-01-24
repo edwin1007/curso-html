@@ -1,0 +1,33 @@
+/*
+
+ejemplos para manejar el vw, permite adaptar la pantalla a diferentes tamaños, responsive. 
+
+mediaqueries son condicionales en css, solo aplicaran si el tamaña de pantalla cumple con la condicion.
+
+*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.element{
+    width: 90%;
+    height: 200px;
+    background-color: slateblue;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px){
+
+    body{
+        background-color: steelblue;
+    }
+}
+
+@media (min-width: 800px){
+
+    body{
+        background-color: blue;
+    }
+}

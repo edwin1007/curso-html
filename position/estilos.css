@@ -1,0 +1,70 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    min-height: 300vh;
+}
+
+.parent{
+    margin: 30px auto;
+    width: 350px;
+    padding: 1em;
+    background-color: indigo;
+
+    position: relative; /*posicion base para childs*/
+}
+
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    word-wrap: break-word;
+    text-align: center;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.relative{
+    position: relative; /*permite usar top, rigth, bottom, left*/
+    /* top: 10px;
+    right: 10px; */
+    /* bottom: 50px;
+    left: 10px; */
+
+    z-index: 15;
+}
+
+.absolute{
+    background-color: slateblue;
+    position: absolute;
+    
+    /* position: absolute: permite usar top, rigth, bottom, left */
+
+    top: 0;
+    left: 60px;
+    
+    /* bottom: 0;
+    margin: 0;  */
+
+    z-index: 20;
+}
+
+/*este elemento se sobrepone a los demas, solo por orden de creacion en index.html, z-index permite modificarlos*/
+.fixed{
+    background-color: crimson;
+    
+    /* position: relative; permite usar trbl */
+    position: fixed; /*sale del flujo*/
+
+    top: 100px;
+    left: 80px;
+
+    z-index: 10;
+    /* width: 100%; */
+}
