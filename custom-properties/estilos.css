@@ -1,0 +1,30 @@
+
+/*
+propiedades personalizadas.
+
+- sirve para cambiar el color principal de una pagina web completa, en resumen, se cambian caracteristicas de elementos que contengan mismo atributos. 
+
+*/
+
+:root{
+    --color-primario: seagreen;
+    --bordes: 3px dashed black;
+    --fuente: Arial;
+}
+
+body{
+    font-family: var(--fuente)
+}
+
+.title{
+    color: var(--color-primario);
+    border: var(--bordes);
+}
+
+.paragraph{
+    color: var(--color-primario);
+}
+
+.cta{
+    border: var(--bordes);
+}
