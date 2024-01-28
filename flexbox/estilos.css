@@ -41,26 +41,41 @@ body{
     color: #fff;
     font-size: 2rem;
     text-align: center;
+
+    /* orden de menor a mayor */
+    order: 0;
+
+    /*toma el espacio necesario/faltante para el espacio total del contenedor, solo afecta el elemento que tenga flex-grow*/
+    flex-grow: 0;
+
+    /*si el contenedor es menor al espacio necesario par los elementos, se resta espacion de manera x a cada elemento*/
+    flex-shrink: 0;
 }
 
 .child--1{
     background-color: indigo;
     /* order: 0; por defecto */
+    /* order: 1; se convierte en el mayor de los 4 */
+    order: 0; 
+    /* flex-grow: 1; */
+
+    flex-shrink: 0;
 }
 
 .child--2{
     background-color: deeppink;
     /* font-size: 80px; */
-    /* order: 1; por defecto */
+    /* order: 1; por defecto, pero prioriza 0 para todos*/
+    /* flex-grow: 1; */
 }
 
 .child--3{
     background-color: royalblue;
-    /* order: 2; por defecto */
+    /* order: 2; por defecto, pero prioriza 0 para todos*/
 }
 
 .child--4{
     background-color: seagreen;
-    /* order: 3; por defecto */
-    order: -1;
+    /* order: 3; por defecto, pero prioriza 0 para todos*/
+    /* order: -1; */
 }
