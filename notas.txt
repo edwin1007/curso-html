@@ -13,3 +13,4 @@ avance 5:03 hh
 avance 5:16 hh
 avance 5:25 hh
 avance 5:31 hh
+avance 5:39 hh: fin practicas, inicio proyecto final
